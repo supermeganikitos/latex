@@ -1,0 +1,37 @@
+% Тип bоок (второй документ)
+\documentclass[a4paper,12pt]{book}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{indentfirst}
+% Межстрочный интервал
+\linespread{1.15}
+\let\cleardoublepage\clearpage
+\title{Избранные произведения}
+\author{Даниил Хармс}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+% Подключаем первый рассказ командой input
+\chapter{Маленькая девочка с гнилым зубом}
+\input{litllegirl}
+% Подключаем второй рассказ командой input
+\chapter{Пашквиль}
+\input{packshwill}
+% Подключаем третий рассказ командой input
+\chapter{Упадание}
+\input{upadanie}
+% Подключаем четвертый рассказ командой input
+\chapter{Забыл, как называется}
+\input{forgothowitcalled}
+% Подключаем пятый рассказ командой input
+\chapter{Вопрос}
+\input{question}
+% Подключаем шестой рассказ командой input
+\chapter{Очень страшная история}
+\input{scarystory}
+
+\end{document}
